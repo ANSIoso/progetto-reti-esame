@@ -1,0 +1,51 @@
+# Indirizzo di partenza 10.0.0.0/8
+
+GREEN
+    network 10.0.0.0/23
+    netmask 255.255.254.0
+    broadcast 10.0.1.255
+
+    CD5
+    	network 10.0.0.0/24
+    	netmask 255.255.255.0
+    	broadcast 10.0.0.255
+
+    CD6
+    	network 10.0.1.0/26
+    	netmask 255.255.255.192
+    	broadcast 10.0.1.63
+
+RED
+    network 10.0.2.0/24
+    netmask 255.255.255.0
+    broadcast 10.0.2.255
+
+    CD1
+        network 10.0.2.0/24
+        netmask 255.255.255.0
+        broadcast 10.0.2.255
+
+DMZ
+    network 10.0.3.0/26
+    netmask 255.255.255.192
+    broadcast 10.0.3.63
+
+    CD7
+    	network 10.0.3.0/26
+    	netmask 255.255.255.192
+    	broadcast 10.0.3.63
+
+CD2
+	network 10.0.3.64/30
+	netmask 255.255.255.252
+	broadcast 10.0.3.67
+
+CD4
+	network 10.0.3.68/30
+	netmask 255.255.255.252
+	broadcast 10.0.3.71
+
+TAP
+	network 10.0.3.72/30
+	netmask 255.255.255.252
+	broadcast 10.0.3.75

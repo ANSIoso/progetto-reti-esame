@@ -1,9 +1,9 @@
-RED --> 25
-	CD1 --> 25
-GREEN 
+GREEN --> 23
 	CD5 --> 24
 	CD6 --> 26
-DMZ
+RED --> 24
+	CD1 --> 24	
+DMZ -->26
 	CD7 --> 26
 
 CD2  --> 30
