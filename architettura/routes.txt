@@ -1,0 +1,24 @@
+F1 --> DMZ
+rout add-net 10.0.3.0/26 gw F2[eth2] dev eth2
+F1 --> CD4
+rout add-net 10.0.3.68/30 gw F2[eth2] dev eth2
+F1 --> GREEN
+rout add-net 10.0.0.0/23 gw F2[eth2] dev eth2
+
+F2 --> RED
+rout add-net 10.0.2.0/24 gw F1[eth2] dev eth2
+F2 --> GREEN
+rout add-net 10.0.0.0/23 gw R2[eth0] dev eth0
+F2 --> TAP
+rout add-net 10.0.3.72/30 gw F1[eth2] dev eth2
+
+R2 --> DMZ
+rout add-net 10.0.3.0/26 gw F2[eth0] dev eth0
+R2 --> CD2
+rout add-net 10.0.3.64/30 gw F2[eth0] dev eth0
+R2 --> RED
+rout add-net 10.0.2.0/24 gw F2[eth0] dev eth0
+R2 --> TAP
+rout add-net 10.0.3.72/30 gw F2[eth0] dev eth0
+
+
